@@ -7,7 +7,7 @@ This package provides a simple and comprehensive way to interact with Cloudflare
 Install the package using pip:
 
 ```bash
-pip install cloudflare-ai
+pip install cfai
 ```
 
 Or from a local directory:

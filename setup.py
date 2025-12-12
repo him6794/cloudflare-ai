@@ -4,14 +4,14 @@ with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setup(
-    name="cloudflare-ai",
+    name="cfai",
     version="0.1.0",
     author="Your Name",
     author_email="your.email@example.com",
     description="A Python client for Cloudflare Workers AI",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/yourusername/cloudflare-ai",
+    url="https://github.com/him6794/cloudflare-ai",
     packages=find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",

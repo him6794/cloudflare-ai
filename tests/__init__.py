@@ -1,1 +1,1 @@
-# Tests for cloudflare-ai package
+# Tests for cfai package
