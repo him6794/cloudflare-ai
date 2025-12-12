@@ -118,8 +118,22 @@ pip install -e .[dev]
 pytest
 ```
 
-### Code Quality
+### Manual Publishing (for testing)
+
+If you want to test publishing manually before setting up automated publishing:
 
 ```bash
-flake8 cloudflare_ai
+# Install twine
+pip install twine
+
+# Build the package
+python -m build
+
+# Upload to PyPI (you'll be prompted for credentials)
+twine upload dist/*
+```
+
+Or use the provided script:
+```bash
+python publish_manual.py
 ```
