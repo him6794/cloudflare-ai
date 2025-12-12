@@ -7,7 +7,7 @@ This package provides a simple and comprehensive way to interact with Cloudflare
 Install the package using pip:
 
 ```bash
-pip install .
+pip install cloudflare-ai
 ```
 
 Or from a local directory:
@@ -94,6 +94,8 @@ To automatically publish to PyPI when pushing to main branch:
 1. Create a PyPI account at https://pypi.org/
 2. Generate an API token from your PyPI account settings
 3. Add the token as a repository secret named `PYPI_API_TOKEN` in your GitHub repository settings
+
+**Note**: The workflow uses Trusted Publishing, so you don't need to set the `PYPI_API_TOKEN` secret if you prefer. However, having the token provides a fallback method.
 
 ### Running Tests Locally
 
