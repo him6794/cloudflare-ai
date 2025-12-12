@@ -3,7 +3,7 @@ requires = ["setuptools", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "cfai"
+name = "cloudflare-ai-python"
 version = "0.1.0"
 description = "A Python client for Cloudflare Workers AI"
 authors = [

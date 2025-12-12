@@ -7,7 +7,7 @@ This package provides a simple and comprehensive way to interact with Cloudflare
 Install the package using pip:
 
 ```bash
-pip install cfai
+pip install cloudflare-ai-python
 ```
 
 Or from a local directory:
@@ -21,7 +21,7 @@ pip install -e .
 ### Initialize the Client
 
 ```python
-from cloudflare_ai import CloudflareAI
+from cloudflare_ai_python import CloudflareAI
 
 # Replace with your actual values
 account_id = "your_account_id"
@@ -50,7 +50,7 @@ print(response['result']['response'])
 For backward compatibility, you can still use the old function:
 
 ```python
-from cloudflare_ai import call_cloudflare_ai
+from cloudflare_ai_python import call_cloudflare_ai
 
 response = call_cloudflare_ai(account_id, api_token, "@cf/meta/llama-3.1-8b-instruct", "Hello World")
 ```

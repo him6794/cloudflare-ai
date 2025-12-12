@@ -5,7 +5,7 @@ Replace with your actual account_id and api_token.
 """
 
 import requests
-from cfai import CloudflareAI
+from cloudflare_ai_python import CloudflareAI
 
 # Replace with your actual values
 account_id = "your_account_id"

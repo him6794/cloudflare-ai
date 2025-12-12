@@ -1,7 +1,7 @@
 import pytest
 from cloudflare_ai_python import CloudflareAI, call_cloudflare_ai
 
-def test_cloudflare_ai_init():
+def test_cloudflare_ai_python_init():
     """Test CloudflareAI initialization"""
     client = CloudflareAI("test_account", "test_token")
     assert client.account_id == "test_account"
