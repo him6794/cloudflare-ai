@@ -89,13 +89,27 @@ If you get a 401 Unauthorized error, your token may be invalid or expired. Creat
 
 ### Setting up PyPI Publishing
 
-To automatically publish to PyPI when pushing to main branch:
+To automatically publish to PyPI when pushing to main branch, you need to configure authentication. Choose one of the following methods:
+
+#### Method 1: API Token (Recommended)
 
 1. Create a PyPI account at https://pypi.org/
-2. Generate an API token from your PyPI account settings
-3. Add the token as a repository secret named `PYPI_API_TOKEN` in your GitHub repository settings
+2. Go to Account Settings → API tokens → Add API token
+3. Create a token with scope "Entire account (all projects)"
+4. Copy the token
+5. In your GitHub repository, go to Settings → Secrets and variables → Actions
+6. Add a new repository secret named `PYPI_API_TOKEN` with the token value
 
-**Note**: The workflow uses Trusted Publishing, so you don't need to set the `PYPI_API_TOKEN` secret if you prefer. However, having the token provides a fallback method.
+#### Method 2: Trusted Publishing
+
+1. First, manually publish your package to PyPI once using Method 1 above
+2. Go to your project on PyPI → Publishing
+3. Click "Add publisher" → "GitHub"
+4. Configure with these settings:
+   - **Repository name**: `him6794/cloudflare-ai`
+   - **Workflow name**: `publish.yml`
+   - **Environment name**: Leave empty
+5. The workflow will then use Trusted Publishing automatically
 
 ### Running Tests Locally
 
